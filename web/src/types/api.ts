@@ -222,7 +222,7 @@ export interface SearchResult {
   updatedAt: string
 }
 
-export type GroupedSearch = { group: string } & SearchResult
+export type GroupedSearch = { group: string; delimiter?: string } & SearchResult
 
 export interface LineageGraph {
   graph: LineageNode[]
